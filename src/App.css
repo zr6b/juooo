@@ -27,6 +27,15 @@
 .App-link {
   color: #61dafb;
 }
+nav a{
+  margin: 5px;
+  color: #61dafb;
+
+}
+.active{
+  color: red;
+}
+
 
 @keyframes App-logo-spin {
   from {
