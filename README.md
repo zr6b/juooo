@@ -1,5 +1,10 @@
 ## 组员
 #### 周瑞 陈皓男 戴元晞 白廷东 郝罗强
+
+------
+
+#### 项目地址：<https://github.com/zr6b/juooo>
+
 ## 4月27日 周瑞
 - 创建了项目，安装了必要组件参照package.json
 - 分类了文件夹 eticket：票夹  juooo：首页 theatre：剧院  myjuooo：我的
