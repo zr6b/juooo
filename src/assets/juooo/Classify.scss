@@ -1,0 +1,28 @@
+.advertion-wrap{
+  padding: 0.53333rem 0.4rem 0;
+  margin-bottom: 0.53333rem;
+  font-size: 12px;
+}
+.lable-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .8rem;
+}
+.label-item__block{
+  display: inline-block;
+}
+.label-item__block__column{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  img{
+    width: 1.36rem;
+    height: 1.36rem;
+  }
+  span{
+    font-size: 0.34667rem;
+    color: #232323;
+    margin-top: 0.2rem;
+  }
+}

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import axios from "axios"
+import './assets/rem'
 import * as serviceWorker from './serviceWorker';
 import{
     BrowserRouter as Router
