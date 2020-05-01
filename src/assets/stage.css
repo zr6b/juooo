@@ -1,0 +1,39 @@
+.stageHeader{
+    background: red;
+    height:30px;
+    width: 100%;
+}
+.stageHeader-left{
+    float: left;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.stageHeader-right{
+    float:right;
+    margin-right: 10px;
+}
+.stageHeader-top{
+    height: 200px;
+    background:rgb(131,106,69);
+    width: 100%;
+}
+.stageHeader-top img{
+    height: 160px;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+.stageHeader-top h3{
+    color:#fff;
+    font-size: 20px;
+}
+.stageHeader-top b{
+    color:#fff;
+    font-size: 18px;
+}
+.stageHeader-top span{
+    color:#fff;
+    font-size: 20px;
+}
+/*.stageHeader-buttom{*/
+/*    float: left;*/
+/*}*/
