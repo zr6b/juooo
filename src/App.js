@@ -1,17 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import{
     NavLink,
-    Route
 } from"react-router-dom"
-import Eticket from "./views/eticket/Eticket";
-import Juooo from "./views/juooo/Juooo";
-import MyJuooo from "./views/myjuooo/MyJuooo";
-import Theatre from "./views/theatre/Theatre";
+import router from "./router/index"
+import MyRouter from "./components/common/MyRouter";
+
 function App() {
   return (
     <div className="App">
+        <MyRouter router={router}></MyRouter>
+
       <nav>
           <NavLink to={"/"} exact>首页</NavLink>|
           <NavLink to={"/theatre"}>剧院</NavLink>|
@@ -19,10 +18,7 @@ function App() {
           <NavLink to={"/myjuooo"}>我的</NavLink>
       </nav>
 
-        <Route path={"/"} exact component={Juooo}></Route>
-        <Route path={"/theatre"} component={Theatre}></Route>
-        <Route path={"/eticket"} component={Eticket}></Route>
-        <Route path={"/myjuooo"} component={MyJuooo}></Route>
+
 
 
     </div>
