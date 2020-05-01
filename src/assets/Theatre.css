@@ -1,0 +1,24 @@
+.theater-wrap{
+    overflow: hidden;
+}
+.title{
+    margin-top: 20px ;
+}
+
+.theater-ul{
+    width: 497px;
+    height: 430px;
+}
+.theater-pic-wrap{
+    width: 72px;
+    height: 72px;
+
+}
+.theater-pic{
+    width: 72px;
+    height: 72px;
+}
+.show-pic{
+    width: 154px;
+    height: 210px;
+}
