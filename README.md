@@ -13,6 +13,8 @@
 ------
 
 #### 项目地址：<https://github.com/zr6b/juooo>
+## 5月2日 陈皓男
+- 回家未写
 ## 5月1日 周瑞
 - 修改了setupProxy.js  "/api"、"/juoo"作为代理 
 - 新建了router 设置了路由外部引用，增加了路由拦截
