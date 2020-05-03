@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import Swiper from "swiper";
 import 'swiper/css/swiper.min.css'
+import '../../assets/juooo/Banner.scss'
 export default class Banner extends Component {
     constructor(props) {
         super(props);
@@ -12,19 +13,21 @@ export default class Banner extends Component {
 
     render() {
            return (
-            <div className="swiper-container banner-swiper">
-                <div className="swiper-wrapper banner-swiper-wrapper">
-                    {
-                        this.state.banner.map((v,i)=>(
-                            <div className="swiper-slide banner-swiper-slide" key={i} >
-                                <Link to={v.url}>
-                                    <img style={{width:'100%',height:'100%'}} src={v.image_url} alt="" />
-                                </Link>
-                            </div>
-                        ))
-                    }
+            <div className={'banner-warp'}>
+                <div className="swiper-container banner-swiper">
+                    <div className="swiper-wrapper banner-swiper-wrapper">
+                        {
+                            this.state.banner.map((v,i)=>(
+                                <div className="swiper-slide banner-swiper-slide" key={i} >
+                                    <Link to={v.url}>
+                                        <img style={{width:'100%',height:'100%'}} src={v.image_url} alt="" />
+                                    </Link>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div className="swiper-pagination banner-swiper-pagination"></div>
                 </div>
-                <div className="swiper-pagination banner-swiper-pagination"></div>
             </div>
         )
 

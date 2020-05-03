@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
 import {Link} from 'react-router-dom';
+import Header from "../../components/juooo/Header";
 import Banner from "../../components/juooo/Banner"; //顶部轮播图
 import Classify from "../../components/juooo/Classify"; //十个按钮
 import VipHomeSchedular from "../../components/juooo/VipHomeSchedular";//vip专享
@@ -19,6 +20,7 @@ export default class Juooo extends Component {
     render() {
         return (
                 <div className={'home'}>
+                    <Header></Header>
                     <Banner></Banner>
                     <Classify></Classify>
                     <VipHomeSchedular></VipHomeSchedular>
