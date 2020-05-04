@@ -13,12 +13,31 @@ export default class Banner extends Component {
 
     render() {
            return (
+               // <div className={'banner-wrap home-banner-wrap'}>
+               //     <div className={'swiper-container banner-swiper'}>
+               //         <div className={'swiper-wrapper banner-swiper-wrapper'}>
+               //             {
+               //                 this.state.banner.map((v,i)=>(
+               //                     <div className={'swiper-slide banner-swiper-slide'} key={i} style={{width:'345px'}}>
+               //                        {/*123*/}
+               //                         <a href={v.url}>
+               //                             <img src={v.image_url} alt=""/>
+               //                         </a>
+               //                     </div>
+               //                 ))
+               //             }
+               //
+               //         </div>
+               //         <div className={'swiper-pagination'}>
+               //         </div>
+               //     </div>
+               // </div>
             <div className={'banner-warp'}>
-                <div className="swiper-container banner-swiper">
-                    <div className="swiper-wrapper banner-swiper-wrapper">
+                <div className={'swiper-container banner-swiper'}>
+                    <div className={'swiper-wrapper banner-swiper-wrapper'}>
                         {
                             this.state.banner.map((v,i)=>(
-                                <div className="swiper-slide banner-swiper-slide" key={i} >
+                                <div className={'swiper-slide banner-swiper-slide'} key={i} >
                                     <Link to={v.url}>
                                         <img style={{width:'100%',height:'100%'}} src={v.image_url} alt="" />
                                     </Link>
@@ -38,17 +57,16 @@ export default class Banner extends Component {
             banner:data.slide_list
         })
         console.log(data)
-        new Swiper ('.banner-swiper', {
-            direction: 'horizontal', // 垂直切换选项
-            loop: true, // 循环模式选项
-            speed:300,//自动播放
-            autoplay : {
-                delay:3000
-            },
-            // 如果需要分页器
-            pagination: {
-                el: '.banner-swiper-pagination',
-            },
-        })
+       new Swiper ('.swiper-container', {
+           direction: 'horizontal',
+           loop: true,
+           speed:300,
+           autoplay : {
+               delay:3000
+           },
+           pagination: {
+               el: '.swiper-pagination',
+           },
+       })
     }
 }

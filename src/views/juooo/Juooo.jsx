@@ -6,6 +6,7 @@ import Header from "../../components/juooo/Header";
 import Banner from "../../components/juooo/Banner"; //顶部轮播图
 import Classify from "../../components/juooo/Classify"; //十个按钮
 import VipHomeSchedular from "../../components/juooo/VipHomeSchedular";//vip专享
+import Advertion from "../../components/juooo/Advertion"
 // import { connect } from 'react-redux';//高阶组件
 // import {bindActionCreators} from 'redux'//绑定并执行一次函数
 // import Banner from "../../components/juooo/Banner";
@@ -24,6 +25,7 @@ export default class Juooo extends Component {
                     <Banner></Banner>
                     <Classify></Classify>
                     <VipHomeSchedular></VipHomeSchedular>
+                    <Advertion></Advertion>
                 </div>
         )
     }
