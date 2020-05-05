@@ -17,10 +17,6 @@ function App() {
           <NavLink to={"/eticket"}>票夹</NavLink>|
           <NavLink to={"/myjuooo"}>我的</NavLink>
       </nav>
-
-
-
-
     </div>
   );
 }
