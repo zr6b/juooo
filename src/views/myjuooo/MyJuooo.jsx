@@ -21,8 +21,12 @@ export default class MyJuooo extends Component {
                                     <div className={"mine-info__main__head__pic mine-info__main__head__pic--no"}>
                                         <img width={"100%"} height={"100%"}
                                              src={"https://m.juooo.com/static/img/logo-user.8413cbf.png"} alt=""/>
-                                        <span className={"mine-info__main__head__name mine-info__main__head__login"}>登录/注册</span>
-                                        {/*<span className={"mine-info__main__head__uid"}>请点击登录<i className={"iconfont ju-icon-arrow-right"}></i></span>*/}
+                                        <span  className={"mine-info__main__head__name"}>欢迎{localStorage.phoneNumber}登录！！！</span>
+                                        <span className={"outLogin"}><input type="button" onClick={()=>{
+                                            localStorage.clear();
+                                            this.props.history.push("/login");
+                                        }} value={localStorage.phoneNumber+"退出登录"}/>
+                                        </span>
                                     </div>
                                     <div className={"mine-info__main__label"}><p
                                         className={"mine-info__main__label__name mine-info__main__label__name--no"}>普通会员
@@ -52,11 +56,15 @@ export default class MyJuooo extends Component {
                                             className={"mine-info__main__cnt__item__name"}>优惠券</p>
                                             <div className={"separator"}></div>
                                         </div>
-                                        <a href="https://m.juooo.com/plus/index"
-                                           className={"mine-info__main__cnt__item mine-info__main__cnt__plus"}><p
-                                            className={"mine-info__main__cnt__item__num mine-info__main__cnt__item__num--no"}>
+                                        {/*<a href="https://m.juooo.com/plus/index"> </a>*/}
+                                        {/*className={"mine-info__main__cnt__item mine-info__main__cnt__plus"}*/}
+                                        <p
+                                           className={"mine-info__main__cnt__item mine-info__main__cnt__plus"}
+                                           className={"mine-info__main__cnt__item__num mine-info__main__cnt__item__num--no"}>
                                             立即开通
-                                        </p> <p className={"mine-info__main__cnt__item__name"}>橙PLUS卡</p></a></div>
+                                        </p> <p className={"mine-info__main__cnt__item__name"}>橙PLUS卡</p>
+
+                                </div>
                                 </div>
                             </div>
                             <div className={"mine-vip"}>

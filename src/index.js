@@ -10,7 +10,8 @@ import{
 } from"react-router-dom"
 
 axios.interceptors.request.use(config=>{
-    config.url = "/api"+config.url;
+    config.url = "/dl"+config.url;
+    // config.url = "/api"+config.url;
     return config;
 })
 axios.interceptors.response.use(({data})=>{
