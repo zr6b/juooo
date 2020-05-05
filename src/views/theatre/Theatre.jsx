@@ -136,14 +136,14 @@ class Theatre extends Component {
 
         await this.props.getTheatreList.call(this)
         console.log(this.props)
-         new Swiper(".swiper-container", {
+        new Swiper(".swiper-container", {
             loop: false,
             slidesPerView: "auto",
             observer: true,
             observeParents: true,
             spaceBetween: 20,
         })
-     }
+    }
 }
 function mapStateToProps(state) {
     console.log(state)
