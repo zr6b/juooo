@@ -13,25 +13,6 @@ export default class Banner extends Component {
 
     render() {
            return (
-               // <div className={'banner-wrap home-banner-wrap'}>
-               //     <div className={'swiper-container banner-swiper'}>
-               //         <div className={'swiper-wrapper banner-swiper-wrapper'}>
-               //             {
-               //                 this.state.banner.map((v,i)=>(
-               //                     <div className={'swiper-slide banner-swiper-slide'} key={i} style={{width:'345px'}}>
-               //                        {/*123*/}
-               //                         <a href={v.url}>
-               //                             <img src={v.image_url} alt=""/>
-               //                         </a>
-               //                     </div>
-               //                 ))
-               //             }
-               //
-               //         </div>
-               //         <div className={'swiper-pagination'}>
-               //         </div>
-               //     </div>
-               // </div>
             <div className={'banner-warp'}>
                 <div className={'swiper-container banner-swiper'}>
                     <div className={'swiper-wrapper banner-swiper-wrapper'}>

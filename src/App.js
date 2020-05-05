@@ -9,6 +9,7 @@ import MyRouter from "./components/common/MyRouter";
 
 function App() {
   return (
+
     <div className="App">
         <MyRouter router={router}></MyRouter>
 
@@ -17,7 +18,8 @@ function App() {
           </NavLink>|
           <NavLink to={"/theatre"}>剧院</NavLink>|
           <NavLink to={"/eticket"}>票夹</NavLink>|
-          <NavLink to={"/myjuooo"}>我的</NavLink>
+          <NavLink to={"/myjuooo"}>我的</NavLink>|
+          <NavLink to={"/City"}>城市</NavLink>
       </nav>
 
 

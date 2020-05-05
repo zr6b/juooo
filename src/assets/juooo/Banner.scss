@@ -2,13 +2,15 @@
   padding: 1.37333rem 0.4rem 0;
 
 }
-.banner-wrap .swiper-container{
+.banner-wrap{
 
   height: 3.73333rem;
   width: 100%;
   border-radius: 0.16rem;
   border: 1px solid #EBEBEB;
-
+.banner-container{
+  padding-top: 0;
+}
 
 }
 .banner-wrap__block{
