@@ -17,6 +17,10 @@ axios.interceptors.request.use(config=>{
     config.url = "/api"+config.url;
     return config;
 })
+// axios.interceptors.request.use(config=>{
+//     config.url = "/dl"+config.url;
+//     return config;
+// })
 axios.interceptors.response.use(({data})=>{
     return data;
 })
