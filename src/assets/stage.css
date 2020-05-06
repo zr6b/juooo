@@ -1,5 +1,4 @@
 .stageHeader{
-    background: red;
     height:30px;
     width: 100%;
 }
@@ -34,6 +33,26 @@
     color:#fff;
     font-size: 20px;
 }
-/*.stageHeader-buttom{*/
-/*    float: left;*/
-/*}*/
+.stageHeader-buttom{
+    float: left;
+    width: 25%;
+    font-size: 12px;
+}
+.stageHeader-buttom h3{
+    width: 100%;
+    color: #232323;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.stageHeader-buttom span{
+    color:#FF6743;
+    font-size: 20px;
+    font-weight: bold;
+}
+.stageHeader-bottom{
+    height:30px;
+    width: 100%;
+    margin-top: 190px;
+}
