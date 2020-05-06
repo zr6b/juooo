@@ -17,13 +17,6 @@ import {
     }
     componentWillMount() {
         //判断是否登录
-        if(this.props.isAuthorization){
-            // 判断身份
-            if(!localStorage.phoneNumber){
-                this.props.history.push("/login");
-            }
-        }
-        // console.log(this.props.path);
     }
  }
 export default withRouter(GuardRouter)

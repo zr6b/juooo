@@ -1,0 +1,3 @@
+export default {
+    CHANGE_THEATRE_LIST:"CHANGE_THEATRE_LIST"
+}

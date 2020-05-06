@@ -3,15 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import axios from "axios"
-import "lib-flexible";
+import './assets/rem'
+import {
+    Provider
+} from "react-redux";
+import store from "./store"
 import * as serviceWorker from './serviceWorker';
 import{
     BrowserRouter as Router
 } from"react-router-dom"
 
 axios.interceptors.request.use(config=>{
-    config.url = "/dl"+config.url;
-    // config.url = "/api"+config.url;
+    config.url = "/api"+config.url;
     return config;
 })
 axios.interceptors.response.use(({data})=>{
@@ -21,9 +24,11 @@ axios.interceptors.response.use(({data})=>{
 React.Component.prototype.$axios = axios;
 ReactDOM.render(
   <React.StrictMode>
-      <Router>
-          <App />
-      </Router>
+      <Provider store={store}>
+          <Router>
+              <App />
+          </Router>
+      </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

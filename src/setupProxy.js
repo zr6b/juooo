@@ -8,14 +8,6 @@ module.exports = function (app) {
             "^/api": ""
         }
     }))
-
-    app.use("/dl", createProxyMiddleware({
-        target: "http://127.0.0.1",
-        changeOrigin: true,
-        pathRewrite: {
-            "^/dl": ""
-        }
-    }))
     app.use("/juooo", createProxyMiddleware({
         target: "https://m.juooo.com",
         changeOrigin: true,
