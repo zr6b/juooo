@@ -3,9 +3,9 @@ import 'swiper/css/swiper.min.css'
 import Swiper from 'swiper'
 import "../../assets/juooo/VipHomeSchedular.scss"
 import imgvip from "../../static/img/vip.png"
-import {
-    NavLink
-} from 'react-router-dom';
+// import {
+//     NavLink
+// } from 'react-router-dom';
 export default class VipHomeSchedular extends Component {
     constructor(props) {
         super(props);

@@ -26,7 +26,7 @@ export default class City extends Component {
             <div>
                 <div className="city">
                     <header className="head_nav">
-                        <span className="head_icon back_icon" ></span>
+                        <span className="head_icon back_icon" onClick={()=>this.props.history.go(-1)}></span>
                         <h3 className="title text-single">城市选择</h3></header>
                     <section className="city-block">
                         <div className="city-block__wrapper">

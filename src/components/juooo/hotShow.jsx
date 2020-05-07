@@ -8,7 +8,7 @@ import {
     bindActionCreators
 }  from 'redux';
 import Swiper from "swiper/js/swiper"
-import browserHistory from 'react-router';
+// import browserHistory from 'react-router';
 import hotShowCreatorfrom from '../../store/actionCreator/juooo'
  class hotShow extends Component {
     constructor(props) {

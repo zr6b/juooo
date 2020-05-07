@@ -7,7 +7,8 @@ import Juooo from "../views/juooo/Juooo";//首页
 import City from "../components/juooo/City";
 import hotShowDetail from "../components/juooo/hotShowDetail"
 import Login from "../views/myjuooo/Login";
-import { Children } from "react";
+import Search from "../components/juooo/Search";
+// import { Children } from "react";
 export default [
     {
     path: "/",
@@ -45,5 +46,9 @@ export default [
     {
         path: "/Login",
         component: Login,
+    },
+    {
+        path: "/Search",
+        component: Search,
     }
 ]

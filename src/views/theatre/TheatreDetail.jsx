@@ -4,7 +4,7 @@ import '../../assets/TheatreDetail.css'
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import theatreDetailCreator from '../../store/actionCreator/theatreDetail'
-import theatreCreator from "../../store/actionCreator/theatre";
+// import theatreCreator from "../../store/actionCreator/theatre";
 class TheatreDetail extends Component {
     constructor(props) {
         super(props);
