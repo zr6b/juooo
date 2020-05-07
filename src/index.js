@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import axios from "axios"
 import './assets/rem'
+import {
+    Provider
+} from "react-redux";
+import store from "./store"
 import * as serviceWorker from './serviceWorker';
 import{
     BrowserRouter as Router
@@ -13,6 +17,10 @@ axios.interceptors.request.use(config=>{
     config.url = "/api"+config.url;
     return config;
 })
+// axios.interceptors.request.use(config=>{
+//     config.url = "/dl"+config.url;
+//     return config;
+// })
 axios.interceptors.response.use(({data})=>{
     return data;
 })
@@ -20,9 +28,11 @@ axios.interceptors.response.use(({data})=>{
 React.Component.prototype.$axios = axios;
 ReactDOM.render(
   <React.StrictMode>
-      <Router>
-          <App />
-      </Router>
+      <Provider store={store}>
+          <Router>
+              <App />
+          </Router>
+      </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

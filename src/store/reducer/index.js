@@ -1,13 +1,13 @@
 import {
     combineReducers
-} from "redux"
-import juooo from "./juooo"
-import myjuoo from "./myjuooo"
-import theatre from "./theatre"
-import eticket from "./eticket"
+} from 'redux';
+import theatreDetail from './theatreDetail';
+import theatre from "./theatre";
+import hotShow from "./juooo/hotShow";
+import performingJour  from "./juooo/performingJour"
 export default combineReducers({
-    juooo,
-    myjuoo,
     theatre,
-    eticket
+    theatreDetail,
+    hotShow,
+    performingJour
 })
