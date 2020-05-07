@@ -7,6 +7,8 @@ import VipHomeSchedular from "../../components/juooo/VipHomeSchedular";//vipä¸“ä
 import Advertion from "../../components/juooo/Advertion"
 import HotShow from "../../components/juooo/hotShow"
 import PerformingJour from "../../components/juooo/performingJour"
+import Stage from "../../components/juooo/stage";
+import Remmmend from "../../components/juooo/remmmend";
 export default class Juooo extends Component {
     constructor(props) {
         super(props);
@@ -24,6 +26,8 @@ export default class Juooo extends Component {
                     <Advertion></Advertion>
                     <HotShow history={this.props.history}></HotShow>
                     <PerformingJour></PerformingJour>
+                    <Stage></Stage>
+                    <Remmmend></Remmmend>
                 </div>
         )
     }

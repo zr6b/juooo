@@ -1,0 +1,71 @@
+.stageHeader{
+    height:30px;
+    width: 100%;
+}
+.stageHeader-left{
+    float: left;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.stageHeader-right{
+    float:right;
+    margin-right: 10px;
+}
+.stageHeader-top{
+    height: 200px;
+    background:rgb(131,106,69);
+    width: 100%;
+}
+.stageHeader-top img{
+    height: 160px;
+    width: 100px;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+.stageHeader-top h3{
+    color:#fff;
+    font-size: 20px;
+}
+.stageHeader-top b{
+    color:#fff;
+    font-size: 18px;
+}
+.stageHeader-top span{
+    color:#fff;
+    font-size: 20px;
+}
+.stageHeader-buttom{
+    float: left;
+    width: 25%;
+    font-size: 12px;
+
+}
+.stageHeader-buttom img{
+    height:150px;
+}
+.stageHeader-buttom h3{
+    width: 100%;
+    color: #232323;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.stageHeader-buttom span{
+    color:#FF6743;
+    font-size: 20px;
+    font-weight: bold;
+}
+.stageHeader-bottom{
+    height:30px;
+    width: 100%;
+    margin-top: 190px;
+}
+.remmond-buttom{
+    text-align:center
+}
+.remmond-buttom img{
+    height:150px;
+    width: 100px;
+
+}
