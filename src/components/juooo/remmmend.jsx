@@ -13,6 +13,7 @@ export default class Remmmend extends React.Component {
         const data = await this.$axios.get('/Show/Search/getShowList?city_id=0&category=&keywords=&venue_id=&start_time=&page='+page+'&referer_type=index&version=6.1.1&referer=2')
         // console.log(data)
         this.setState({
+
             pageNo:data.data.page,
             reCommend:[
                 ...this.state.reCommend,
@@ -29,19 +30,30 @@ export default class Remmmend extends React.Component {
                     <span className={'stageHeader-right'}>></span>
                 </div>
                 {
-                    this.state.reCommend.map(v=>(
-                        <div className={"remmond-buttom"}  key={v.schedular_id}>
+                    this.state.reCommend.map((v,index)=>(
+                        <div   className={"remmond-buttom"}  key={index}>
                             <img height={100} src={v.pic} alt=""/>
                             <p>{v.name}</p>
-                            <p>{v.start_show_time}</p>
+                            <p className={"second-remd"}>{v.start_show_time}</p>
+                            <span>￥{v.min_price}</span>起
                         </div>
                     ))
                 }
-                <input type="button" value={'继续加载'} onClick={this.getRecommend.bind(this,this.state.pageNo+1)}/>
+
             </div>
         )
     }
+    bindHandleScroll=(event)=>{
+        const scrollTop = (event.srcElement ? event.srcElement.documentElement.scrollTop : false)
+            || window.pageYOffset
+            || (event.srcElement ? event.srcElement.body.scrollTop : 0);
+        // console.log(document.body.scrollHeight-scrollTop)
+        if(document.body.scrollHeight-scrollTop<1000 ){
+            this.getRecommend(this.state.pageNo+1);
+        }
+    }
     componentDidMount() {
+        window.addEventListener('scroll', this.bindHandleScroll)
         this.getRecommend();
     }
 }

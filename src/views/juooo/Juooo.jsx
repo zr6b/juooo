@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import 'swiper/css/swiper.min.css'
 import Header from "../../components/juooo/Header";
 import Banner from "../../components/juooo/Banner"; //顶部轮播图
 import Classify from "../../components/juooo/Classify"; //十个按钮

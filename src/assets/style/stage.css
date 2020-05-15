@@ -62,10 +62,22 @@
     margin-top: 190px;
 }
 .remmond-buttom{
-    text-align:center
+    text-align:center;
+    width:50%;
+    float: left;
 }
 .remmond-buttom img{
-    height:150px;
-    width: 100px;
-
+    width:95%;
+    padding: 10px 0px;
+}
+.remmond-buttom p{
+    font-size: 12px;
+    width:95%;
+}
+.remmond-buttom span{
+    color: #FF6743;
+    font-size: 26px;
+}
+.second-remd{
+    color:#666;
 }
